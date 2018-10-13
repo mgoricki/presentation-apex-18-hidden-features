@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>APEX 18.1 "hidden" features</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/font-apex.min.css?v=2.1" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+ </head>
+  <body>
+<!--
+You probably heard about all those major features in new APEX release like REST enabled SQL support, REST service consumption and new create app wizard.
+But what about all those small new features and improvements that can increase your productivity and make your developing time even easier.
+In this session we will take a closer look at new APIs and other small but useful features and improvements.
+-->
+
+    
+    <script src="lib/remark-latest.min.js"></script>
+    <script src="lib/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script>
+    var slideshow = remark.create({
+      sourceUrl: 'http://localhost:3000/presentation.md',
+      ratio: '16:9', // or 4:3
+      navigation: {
+        scroll: false,
+        touch: true,
+        click: false
+      },
+      // highlightLanguage: 'javascript',
+      highlightStyle: 'magula',
+      // arta, ascetic, dark, default, far, github, googlecode, idea, ir-black, magula, monokai, rainbow, solarized-dark, solarized-light, sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright, tomorrow-night, tomorrow-night-eighties, vs, zenburn
+      highlightLines: true,
+      // highlightSpans: true,
+      countIncrementalSlides: true,
+      slideNumberFormat: ''
+    });
+
+    slideshow.on('showSlide', function (slide) {
+      // Make all links open in a new tab/window
+      $('a').prop('target', '_blank');
+    });
+
+    slideshow.on('afterShowSlide', function(slide) {
+    });
+
+    // set full height and width
+    $(function()  {
+        setRemarkSizes();
+        $(window).resize(function() {
+          setRemarkSizes();
+        });
+    });
+
+    //take care of IE problem and resizing
+    function setRemarkSizes() {
+      var vWin$ = $(window);
+      var vHeight = $(window).height()
+      var vWidth = $(window).width();
+      $('.remark-slide-scaler').height(vHeight)
+                               .width(vWidth)
+                               .css('top', '0px')
+                               .css('left', '0px')
+                               .css('-webkit-transform', 'none');
+    }    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "eqeqeq": true,
+  "undef": true,
+  "laxcomma": true,
+  "browser": true,
+
+  "predef": [
+    "require",
+    "module",
+    "exports",
+    "location",
+    "describe",
+    "before",
+    "it",
+    "alert",
+    "$"
+  ]
+}
