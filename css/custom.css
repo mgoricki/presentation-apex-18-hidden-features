@@ -48,7 +48,7 @@ h4{
   width: 100%;  
 }
 .remark-slide-content.center h1{
-  padding: 30px;
+  padding: 40px;
   position: initial;
   border-top: 4px solid #efefef;
 } 
@@ -73,7 +73,7 @@ h4{
 }  
 .remark-slide-content{
   padding:0;
-  font-size:25px;
+  font-size:30px;
 }
 
 .remark-slide-scaler{

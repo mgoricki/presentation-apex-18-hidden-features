@@ -38,7 +38,7 @@ declare
   v_apex_export_files apex_t_export_files; -- table of apex_t_export_file
 begin
   v_apex_export_files := apex_export.get_application(p_application_id => 114
-                                                   , p_with_acl_assignments => true 
+                                                   , p_with_acl_assignments => false 
                                                     );
   dbms_output.put_line(v_apex_export_files(1).name); 
   dbms_output.put_line(length(v_apex_export_files(1).contents)); 

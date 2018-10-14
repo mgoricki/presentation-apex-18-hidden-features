@@ -1,7 +1,22 @@
 --dictionary views:
-select role_name, role_static_id, role_desc from apex_appl_acl_roles where workspace = 'SIOUG2018' and application_id = 114;
-select user_name, role_ids, role_names from apex_appl_acl_users where workspace = 'SIOUG2018' and application_id = 114;
-select user_name, role_id, role_name, role_static_id, role_desc from apex_appl_acl_user_roles where workspace = 'SIOUG2018'  and application_id = 114 order by 1;
+-- all roles
+select role_name, role_static_id, role_desc 
+  from apex_appl_acl_roles 
+ where workspace = 'SIOUG2018' 
+   and application_id = 114;
+
+-- users
+select user_name, role_ids, role_names
+  from apex_appl_acl_users x
+ where workspace = 'SIOUG2018' 
+   and application_id = 114;
+   
+-- users and roles   
+select user_name, role_id, role_name, role_static_id, role_desc 
+  from apex_appl_acl_user_roles 
+ where workspace = 'SIOUG2018'  
+   and application_id = 114 
+ order by 1;
 
 -----------------------------
 -- ADD_USER_ROLE 
@@ -11,7 +26,7 @@ begin
   apex_acl.add_user_role (
      p_application_id => 114 -- default wwv_flow_security.g_flow_id
     ,p_user_name      => 'DEMO'
-    ,p_role_static_id => 'READER'
+    ,p_role_static_id => 'CONTRIBUTOR'
   );
   commit;   
 end;
@@ -26,7 +41,7 @@ begin
 	-- removes an assigned role from a user
     p_application_id => 114, -- default wwv_flow_security.g_flow_id,
     p_user_name      => 'DEMO',
-    p_role_static_id => 'READER');
+    p_role_static_id => 'CONTRIBUTOR');
     commit;  
 end;
 /

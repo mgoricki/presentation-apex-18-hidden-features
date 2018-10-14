@@ -3,6 +3,15 @@ class: center, middle
 
 **Marko Gorički**
 
+<i class="fab fa-twitter"></i>  [@mgoricki](https://twitter.com/mgoricki)
+
+<i class="fas fa-at"></i> mgoricki8@gmail.com
+
+<i class="fab fa-github"></i>  [https://github.com/mgoricki/](https://github.com/mgoricki/)
+
+<i class="fab fa-blogger"></i> APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
+
+
 ---
 
 class: center, middle
@@ -10,6 +19,14 @@ count: false
 # APEX <span class="red">~~18.1~~</span> "hidden" features
 
 **Marko Gorički**
+
+<i class="fab fa-twitter"></i>  [@mgoricki](https://twitter.com/mgoricki)
+
+<i class="fas fa-at"></i> mgoricki8@gmail.com
+
+<i class="fab fa-github"></i>  [https://github.com/mgoricki/](https://github.com/mgoricki/)
+
+<i class="fab fa-blogger"></i> APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
 
 ---
 
@@ -19,6 +36,14 @@ count: false
 
 **Marko Gorički**
 
+<i class="fab fa-twitter"></i>  [@mgoricki](https://twitter.com/mgoricki)
+
+<i class="fas fa-at"></i> mgoricki8@gmail.com
+
+<i class="fab fa-github"></i>  [https://github.com/mgoricki/](https://github.com/mgoricki/)
+
+<i class="fab fa-blogger"></i> APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
+
 ---
 
 class: center, middle
@@ -26,6 +51,14 @@ count: false
 # APEX <span class="red">~~18.1~~</span> <span class="red">~~"hidden"~~</span> <span class="red">~~features~~</span>
 
 **Marko Gorički**
+
+<i class="fab fa-twitter"></i>  [@mgoricki](https://twitter.com/mgoricki)
+
+<i class="fas fa-at"></i> mgoricki8@gmail.com
+
+<i class="fab fa-github"></i>  [https://github.com/mgoricki/](https://github.com/mgoricki/)
+
+<i class="fab fa-blogger"></i> APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
 
 ---
 
@@ -35,6 +68,14 @@ count: false
 
 **Marko Gorički**
 
+<i class="fab fa-twitter"></i>  [@mgoricki](https://twitter.com/mgoricki)
+
+<i class="fas fa-at"></i> mgoricki8@gmail.com
+
+<i class="fab fa-github"></i>  [https://github.com/mgoricki/](https://github.com/mgoricki/)
+
+<i class="fab fa-blogger"></i> APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
+
 ---
 
 class: center, middle
@@ -43,28 +84,37 @@ count: false
 
 **Marko Gorički**
 
+<i class="fab fa-twitter"></i>  [@mgoricki](https://twitter.com/mgoricki)
+
+<i class="fas fa-at"></i> mgoricki8@gmail.com
+
+<i class="fab fa-github"></i>  [https://github.com/mgoricki/](https://github.com/mgoricki/)
+
+<i class="fab fa-blogger"></i> APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
+
+
 ---
 
 # About Me
 
-- I'm not 18 :)
 - Software Consultant @ BiLog (Croatia)
-- more than 10 years of experience with APEX
-- presenter at HROUG, SIOUG, APEX World, KSCOPE, APEX Alpe Adria, <br>APEX Connect
+- More than 10 years of experience with APEX
+- Presenter at HROUG, SIOUG, APEX World, KSCOPE, APEX Alpe Adria ([https://www.aaapeks.info](https://www.aaapeks.info)), <br>APEX Connect
 - [apex.world](http://apex.world) Member of the year 2017 (and month November 2017)
-- APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
-- [https://github.com/mgoricki/](https://github.com/mgoricki/)
-- <span class="fa fa-twitter" aria-hidden="true"></span>Twitter: [@mgoricki](https://twitter.com/mgoricki)
+- <i class="fab fa-blogger"></i> APEX related blog - [apexbyg.blogspot.com](http://apexbyg.blogspot.com)
+- <i class="fab fa-github"></i>  [https://github.com/mgoricki/](https://github.com/mgoricki/)
+- <i class="fab fa-twitter"></i>  [@mgoricki](https://twitter.com/mgoricki)
+- <i class="fas fa-at"></i> mgoricki8@gmail.com
 
 .myPhoto[![Marko Gorički](./img/slika.jpg)]
 ---
 
 # BiLog
 
-- software development company focused on consulting and business solution development
-- technology focus Oracle (APEX)
+- Software development company focused on consulting and business solution development
+- Technology focus Oracle (APEX)
 - Forms > APEX migrations, APEX educations, consulting, plugin development 
-- our APEX solutions:
+- Our APEX solutions:
   - HR management software
   - Regulatory reporting for insurance
   - Reinsurance
@@ -82,23 +132,19 @@ count: false
   - ACL
   - Export
   - Mail templates
+  - Dynamically Set Parsing Schema
 - APEX 5.* APIs and features 
-- Demo, demo, demo, demo, demo...
-- Wrap Up
+  - Session Cloning
+  - APEX URL
+  - APEX String
+- Other APIs  
+
 
 ---
 
 class: center, middle
 
 #  Why to use APIs?
-
----
-
-#  Why to use APIs?
-
-- faster development
-- tested 
-
 
 ---
 
@@ -140,8 +186,10 @@ apex.item('P11_ITEM2').getValue();
   - [Release Notes](https://docs.oracle.com/database/apex-18.1/HTMRN/toc.htm#HTMRN-GUID-540B73CB-08A7-4422-B6BF-CC785EC47694) / New Features
   - [Changes in this release](https://docs.oracle.com/database/apex-18.2/AEAPI/changes-in-this-release.htm#AEAPI29121)  
   - Sample Applications
-- Twitter, blogs
-  - [get along with Oracle and APEX](http://www.oracle-and-apex.com/) by Peter Raganitsch - [Package API and View changes in Oracle APEX 18.2](http://www.oracle-and-apex.com/package-api-and-view-changes-in-oracle-apex-18-2/)
+- <i class="fab fa-twitter"></i> [#orclapex](https://twitter.com/hashtag/orclapex?src=tren)
+- <i class="fab fa-blogger"></i> Blogs
+- [https://github.com/Dani3lSun/awesome-orclapex](https://github.com/Dani3lSun/awesome-orclapex)
+
 
 
 ---
@@ -161,7 +209,7 @@ apex.item('P11_ITEM2').getValue();
 - 7 levels ([constants](https://docs.oracle.com/database/apex-18.1/AEAPI/Constants-2.htm#AEAPI29184)):
   - 1 - error
   - 2 - warning
-  - 4 - info (default)
+  - 4 - info (default) - same as YES
   - 5 - app_enter
   - 6 - app_trace
   - 8 - engine_enter 
@@ -246,7 +294,7 @@ end;
 ```
 
 ## Delete/Detach Session
-- calls application's Cleanup PL/SQL Code and reset the environment
+- calls application's **Cleanup PL/SQL Code** and reset the environment
 - apex_session.detach - same as delete session but no parameter
 
 ```sql
@@ -320,8 +368,8 @@ end;
 - Control access to pages and components with Authorization Schemes
 - **dictionary views**:
   - apex_appl_acl_roles
-  - apex_appl_acl_user_roles
   - apex_appl_acl_users
+  - apex_appl_acl_user_roles
 - **API package**: apex_acl  
   - add_user_role 
   - add_user_roles
@@ -404,7 +452,7 @@ end;
 
 ## REMOVE_ALL_USER_ROLES
 
-- add_user_roles (array of roles), replace_user_roles (remove and add array of roles)
+- removes all assigned roles from a user
 
 ```sql
 begin
@@ -459,8 +507,8 @@ end;
 
 # APEX Export
 
-- can be done in APEX Builder or with Java Utility
-- provides APIs to export the definitions of applications, files, feedback, and workspaces to text files as CLOBs or table of CLOBs
+- can be done in APEX Builder, with Java Utility or SQLcl
+- can export the app definitions, files, feedback, and workspaces to text files as CLOBs
 - available from APEX 5.1 (but not documented)
 - uses utility types APEX_T_EXPORT_FILE and APEX_T_EXPORT_FILES
 
@@ -709,7 +757,7 @@ end;
 
 ## Links
 
-- [Demo](http://localhost:8080/ords/f?p=114:14)
+- [Demo](http://localhost:8080/ords/f?p=114:14:0)
 
 ---
 
@@ -927,15 +975,24 @@ select apex_util.get_hash(
     - **APEX_JSON** - utilities to parse and generate JSON
     - **APEX_WEB_SERVICE** - utilities to invoke WS
 
+  - Non APEX APIs
+    - https://github.com/mortenbra/alexandria-plsql-utils
+    - OraOpenSource https://oos-utils.readthedocs.io/en/latest/README/      
+
 ---
+class: center, middle
 
-# Resources
+# Questions?
 
 ---
+class: center, middle
 
-# Notest
+# https://github.com/mgoricki/presentation-apex-18-hidden-features
 
-  
+---
+class: center, middle
+
+# Thank You!
 
 
 

@@ -1,6 +1,0 @@
---require should
---require sinon
---require ./test/environment
---require ./src/remark/utils
---reporter dot
---ui bdd
