@@ -16,6 +16,7 @@ select name, apex_app_setting.get_value(p_name => name)
   from apex_application_settings 
  where application_id = 114;
  
+ 
 
 ----------------------------
 -- SET_VALUE

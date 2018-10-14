@@ -5,6 +5,7 @@ select *
   from apex_workspace_sessions 
  where workspace_name = 'SIOUG2018' 
    and trunc(session_created) = trunc(Sysdate)
+   and user_name = 'DEMO'
 order by session_created desc;
    
 ------------------------------------------------------------------------------------------------
@@ -16,6 +17,8 @@ begin
   commit; -- DON'T FORGET TO COMMIT!!!!       
 end;
 /
+
+select * from apex_debug_messages where session_id = 4668249412165 order by id desc;
 
 ------------------------------------------------------------------------------------------------
 -- 2) CREATE_SESSION
@@ -39,7 +42,10 @@ select * From apex_collections;
 exec apex_collection.create_collection_from_query ('EMP', 'select * from emp', p_truncate_if_exists => 'YES');
 select * From apex_collections;
 
-exec apex_collection.update_member_attribute('EMP', p_seq => 1, p_attr_number => 2, p_attr_VALUE => 'KING THE GREATEST'); 
+exec apex_collection.update_member_attribute('EMP'
+                                           , p_seq => 1
+                                           , p_attr_number => 2
+                                           , p_attr_VALUE => 'KING THE GREATEST'); 
 
 -- Example 3: use v function 
 select v('P1_DEPTNO') from dual;
@@ -47,10 +53,10 @@ select v('P1_DEPTNO') from dual;
 create or replace view v_emp as
   select * 
     from emp
-   where deptno = v('P1_DEPTNO'); 
+   where deptno = (select v('P1_DEPTNO') from dual); 
    
 select * from v_emp;
-call apex_util.set_session_state('P1_DEPTNO', '30'); -- you don't even need to create item
+call apex_util.set_session_state('P1_DEPTNO', '10'); -- you don't even need to create item
 
 -- Example 4: Create protected URL outside APEX session
 select apex_page.get_url(p_items => 'P1_DEPTNO', p_values => '10') url from dual;
@@ -59,6 +65,7 @@ select apex_page.get_url(p_items => 'P1_DEPTNO', p_values => '10') url from dual
 ------------------------------------------------------------------------------------------------
 -- 3) ATTACH
 begin
+  -- no need to set workspace id
   apex_session.attach(p_app_id     => 114
                     , p_page_id    => 3
                     , p_session_id => :APP_SESSION);
@@ -77,6 +84,13 @@ exec apex_util.set_session_state('P3_ITEM', 'Marko');
 
 -- you can alse see collections
 select * From apex_collections;
+
+begin
+  apex_collection.update_member_attribute('EMP', p_seq => 1, p_attr_number => 2, p_attr_VALUE => 'KING THE GREATEST'); 
+  commit;
+end;
+/
+
 
 
 ------------------------------------------------------------------------------------------------

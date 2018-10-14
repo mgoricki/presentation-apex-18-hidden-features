@@ -147,6 +147,7 @@ class: center, middle
 #  Why to use APIs?
 
 ---
+exclude: true
 
 #  Why to use APIs?
 
@@ -182,13 +183,13 @@ apex.item('P11_ITEM2').getValue();
 
 - APEX documentation
   - [apex.oracle.com/doc182](https://apex.oracle.com/doc182)
-  - [apex.oracle.com/shortcuts](https://apex.oracle.com/shortcuts)
   - [Release Notes](https://docs.oracle.com/database/apex-18.1/HTMRN/toc.htm#HTMRN-GUID-540B73CB-08A7-4422-B6BF-CC785EC47694) / New Features
   - [Changes in this release](https://docs.oracle.com/database/apex-18.2/AEAPI/changes-in-this-release.htm#AEAPI29121)  
   - Sample Applications
 - <i class="fab fa-twitter"></i> [#orclapex](https://twitter.com/hashtag/orclapex?src=tren)
 - <i class="fab fa-blogger"></i> Blogs
 - [https://github.com/Dani3lSun/awesome-orclapex](https://github.com/Dani3lSun/awesome-orclapex)
+- [apex.oracle.com/shortcuts](https://apex.oracle.com/shortcuts)
 
 
 
