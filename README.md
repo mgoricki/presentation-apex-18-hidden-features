@@ -1,4 +1,3 @@
-class: center, middle
 # APEX 18.1 "hidden" features
 
 **Marko Gorički**

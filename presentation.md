@@ -988,7 +988,8 @@ class: center, middle
 ---
 class: center, middle
 
-# https://github.com/mgoricki/presentation-apex-18-hidden-features
+# http://bit.do/apex-hidden-features
+.qrcode[![qrcode](./img/qrcode.png)]
 
 ---
 class: center, middle
