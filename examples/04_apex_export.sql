@@ -41,7 +41,8 @@ begin
                                                    , p_with_acl_assignments => true 
                                                     );
   dbms_output.put_line(v_apex_export_files(1).name); 
-  dbms_output.put_line(length(v_apex_export_files(1).contents)); 
+  dbms_output.put_line(length(v_apex_export_files(1).contents));
+  
   p_log_clob(v_apex_export_files(1).name, v_apex_export_files(1).contents);
 end;
 /

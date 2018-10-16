@@ -27,6 +27,7 @@ begin
   apex_session.create_session (p_app_id   => 114
                              , p_page_id  => 1
                              , p_username => :USER);
+  commit;                             
 end;
 /
 
@@ -42,10 +43,14 @@ select * From apex_collections;
 exec apex_collection.create_collection_from_query ('EMP', 'select * from emp', p_truncate_if_exists => 'YES');
 select * From apex_collections;
 
-exec apex_collection.update_member_attribute('EMP'
-                                           , p_seq => 1
-                                           , p_attr_number => 2
-                                           , p_attr_VALUE => 'KING THE GREATEST'); 
+begin
+  apex_collection.update_member_attribute('EMP'
+                                        , p_seq => 1
+                                        , p_attr_number => 2
+                                        , p_attr_VALUE => 'KING THE GREATEST'); 
+  commit;
+end;     
+/
 
 -- Example 3: use v function 
 select v('P1_DEPTNO') from dual;
@@ -56,7 +61,7 @@ create or replace view v_emp as
    where deptno = (select v('P1_DEPTNO') from dual); 
    
 select * from v_emp;
-call apex_util.set_session_state('P1_DEPTNO', '10'); -- you don't even need to create item
+call apex_util.set_session_state('P1_DEPTNO', '20'); -- you don't even need to create item
 
 -- Example 4: Create protected URL outside APEX session
 select apex_page.get_url(p_items => 'P1_DEPTNO', p_values => '10') url from dual;
@@ -69,6 +74,7 @@ begin
   apex_session.attach(p_app_id     => 114
                     , p_page_id    => 3
                     , p_session_id => :APP_SESSION);
+  commit;                    
 end;
 /
 
@@ -100,6 +106,7 @@ begin
   apex_session.create_session (p_app_id   => 114
                              , p_page_id  => 1
                              , p_username => :USER);
+  commit;                             
 end;
 /
 select * from apex_workspace_sessions where workspace_name = 'SIOUG2018' and apex_session_id = v('APP_SESSION');
