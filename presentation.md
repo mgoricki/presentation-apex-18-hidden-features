@@ -144,12 +144,12 @@ count: false
 
 class: center, middle
 
-#  Why to use APIs?
+#  Why to use APEX APIs?
 
 ---
 exclude: true
 
-#  Why to use APIs?
+#  Why to use APEX APIs?
 
 - Example 1:
 
@@ -988,7 +988,7 @@ class: center, middle
 ---
 class: center, middle
 
-# http://bit.do/apex-hidden-features
+# http://bit.do/hroug-apex-hidden-features
 .qrcode[![qrcode](./img/qrcode.png)]
 
 ---
